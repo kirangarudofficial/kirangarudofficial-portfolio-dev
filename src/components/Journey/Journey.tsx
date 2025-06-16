@@ -13,80 +13,75 @@ interface TimelineEvent {
 const Journey: React.FC = () => {
   const timeline: TimelineEvent[] = [
     {
-      year: '2020',
-      title: 'Pursuing Education Amidst Uncertainty',
-      description: "Completed Master's in Commerce during COVID-19 lockdown despite lack of personal interest.",
+      year: '2025',
+      title: 'Industry-Ready DevOps Professional',
+      description: 'Actively seeking opportunities to contribute expertise in cloud infrastructure, automation, and AI-enhanced DevOps practices.',
       type: 'career',
       details: [
-        'Chose commerce due to financial instability and personal reasons',
-        'Focused on completing post-graduation during global pandemic',
-        'First job experience in logistics sector'
+        'Portfolio showcasing 20+ production-ready cloud solutions',
+        'Advanced proficiency in multi-cloud environments (AWS, Azure, GCP)',
+        'Proven track record in enterprise-grade infrastructure delivery',
+        'Ready to drive digital transformation initiatives'
+      ]
+    },
+    {
+      year: '2024',
+      title: 'Advanced Cloud & AI Integration Mastery',
+      description: 'Completed comprehensive advanced training program, mastering cutting-edge DevOps tools and AI integration techniques.',
+      type: 'achievement',
+      details: [
+        'Mastered Docker, Kubernetes, Ansible, and container orchestration',
+        'Implemented monitoring solutions with Grafana, Prometheus, and ELK Stack',
+        'Developed automation scripts in Python and advanced shell scripting',
+        'Integrated AI tools into DevOps workflows for enhanced productivity'
+      ]
+    },
+    {
+      year: '2024',
+      title: 'Multi-Cloud Platform Expertise',
+      description: 'Expanded technical capabilities across major cloud platforms while deepening DevOps automation skills.',
+      type: 'learning',
+      details: [
+        'Achieved proficiency in Azure and Google Cloud Platform',
+        'Advanced Git workflows and collaborative development practices',
+        'Infrastructure monitoring and observability implementation',
+        'Cost optimization strategies across multi-cloud environments'
+      ]
+    },
+    {
+      year: '2023',
+      title: 'Production Project Portfolio Development',
+      description: 'Successfully delivered 20+ real-world cloud and DevOps projects, demonstrating consistent execution in production environments.',
+      type: 'achievement',
+      details: [
+        'Architected and deployed scalable AWS infrastructure solutions',
+        'Built robust CI/CD pipelines with automated testing and deployment',
+        'Implemented Infrastructure as Code using Terraform and CloudFormation',
+        'Delivered monitoring, security, and cost optimization solutions'
+      ]
+    },
+    {
+      year: '2023',
+      title: 'AWS Certification & Hands-On Mastery',
+      description: 'Achieved AWS Solutions Architect certification while gaining practical experience through intensive project-based learning.',
+      type: 'learning',
+      details: [
+        'Earned AWS Solutions Architect – Associate certification',
+        'Completed comprehensive DevOps training with real-world labs',
+        'Mastered Linux system administration and cloud CLI tools',
+        'Applied theoretical knowledge through 10+ practical AWS projects'
       ]
     },
     {
       year: '2022',
-      title: 'Discovering Cloud & New Passion',
-      description: 'Left job after realizing a deep interest in cloud computing and IT industry.',
+      title: 'Strategic Career Pivot to Cloud Technology',
+      description: 'Made the decisive transition from traditional commerce sector to cloud computing, recognizing the transformative potential of DevOps.',
       type: 'career',
       details: [
-        'Introduced to cloud computing after leaving logistics sector',
-        'Self-assessed strong alignment with cloud technologies',
-        'Decided to pivot fully into the tech field'
-      ]
-    },
-    {
-      year: '2023',
-      title: 'Formal Training in AWS, DevOps & Linux',
-      description: 'Joined institute to build strong foundation in cloud and DevOps.',
-      type: 'learning',
-      details: [
-        'Completed AWS & DevOps training with hands-on labs',
-        'Mastered Linux fundamentals and cloud CLI tools',
-        'Successfully passed AWS Solutions Architect Certification'
-      ]
-    },
-    {
-      year: '2023',
-      title: 'First Real-World Project Experience',
-      description: 'Applied skills on 10+ AWS DevOps projects with real infrastructure and CI/CD pipelines.',
-      type: 'achievement',
-      details: [
-        'Designed and deployed scalable AWS architectures',
-        'Built and automated CI/CD pipelines',
-        'Used Terraform, Git, and Linux to manage cloud resources'
-      ]
-    },
-    {
-      year: '2024',
-      title: 'Advanced Cloud & DevOps Training',
-      description: 'Joined advanced program to upskill in cloud platforms, DevOps tools, and coding.',
-      type: 'learning',
-      details: [
-        'Expanded expertise to Azure and Google Cloud',
-        'Learned Docker, Kubernetes, Ansible, Grafana, Prometheus, Git',
-        'Started writing automation scripts in Python and one more language'
-      ]
-    },
-    {
-      year: '2024',
-      title: 'Professional Readiness with 20+ Projects',
-      description: 'Completed over 20 real-world cloud and DevOps projects — ready for industry.',
-      type: 'achievement',
-      details: [
-        'Built and monitored full-stack cloud-native apps',
-        'Implemented infrastructure-as-code and automation',
-        'Demonstrated consistent hands-on delivery in real environments'
-      ]
-    },
-    {
-      year: '2025',
-      title: 'Portfolio Creation & Career Launch',
-      description: 'Documenting skills, projects, and journey into a professional portfolio.',
-      type: 'career',
-      details: [
-        'Building personal DevOps portfolio with AWS hosting',
-        'Ready to contribute to real-world DevOps teams',
-        'Driven by resilience, passion, and technical excellence'
+        'Identified strong alignment with cloud computing principles',
+        'Committed to full-time technology career development',
+        'Began intensive self-study in AWS and DevOps fundamentals',
+        'Established foundation for systematic skill development'
       ]
     }
   ];
@@ -144,7 +139,7 @@ const Journey: React.FC = () => {
             className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-400/20 to-cyan-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full mb-6"
           >
             <Calendar className="h-4 w-4 text-blue-400" />
-            <span className="text-sm text-blue-400 font-medium">Career Transformation</span>
+            <span className="text-sm text-blue-400 font-medium">Professional Evolution</span>
           </motion.div>
 
           <motion.h2
@@ -152,7 +147,11 @@ const Journey: React.FC = () => {
             className="text-4xl sm:text-5xl font-bold mb-6"
           >
             <span className="bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-              My Journey
+              My Professional
+            </span>
+            <br />
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-500 bg-clip-text text-transparent">
+              Journey
             </span>
           </motion.h2>
 
@@ -160,8 +159,8 @@ const Journey: React.FC = () => {
             variants={itemVariants}
             className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
-            From unexpected beginnings to cloud-native expertise — here's how I transformed my career 
-            through determination, continuous learning, and hands-on experience.
+            A strategic transformation from traditional commerce to cutting-edge cloud technology — 
+            showcasing rapid skill acquisition, practical application, and readiness for enterprise challenges.
           </motion.p>
         </motion.div>
 
@@ -250,11 +249,11 @@ const Journey: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-3xl font-bold text-white mb-4">
-            Ready for the Next Chapter
+            Ready to Drive Your Next Innovation
           </h3>
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-lg">
-            This journey has equipped me with real-world skills, hands-on experience, and the determination 
-            to contribute meaningfully to your DevOps team. Let's build something amazing together.
+            This accelerated journey from commerce to cloud demonstrates adaptability, rapid learning, 
+            and practical execution. Let's discuss how this unique perspective can benefit your organization.
           </p>
           <motion.button
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-lg"
