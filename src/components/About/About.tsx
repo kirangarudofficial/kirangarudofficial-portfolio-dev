@@ -127,8 +127,8 @@ const About: React.FC = () => {
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/5 via-blue-500/5 to-purple-600/5"></div>
+              {/* Enhanced Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-blue-500/10 to-purple-600/10"></div>
               
               {/* Profile Image Placeholder */}
               <div className="relative mb-8">
@@ -160,7 +160,7 @@ const About: React.FC = () => {
                 </p>
                 <div className="px-8 py-4 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 backdrop-blur-sm border border-cyan-400/30 rounded-2xl">
                   <p className="text-gray-300 text-base leading-relaxed font-medium">
-                    "Transforming Infrastructure with AI-Powered Automation"
+                    "Transforming Infrastructure with AI-Powered Innovation"
                   </p>
                 </div>
               </div>
@@ -198,19 +198,19 @@ const About: React.FC = () => {
             <motion.div variants={textVariants} className="space-y-8">
               <div className="prose prose-xl prose-invert max-w-none">
                 <p className="text-gray-300 leading-relaxed text-xl mb-6">
-                  I'm <span className="text-cyan-400 font-semibold">Kiran Garud</span>, a DevOps Engineer with a uniquely diverse background that shapes the way I build and innovate in the cloud. My journey began in commerce, moved through the logistics sector, and ultimately led me to cloud computing — where I discovered a deep passion for automation, infrastructure, and scalable solutions.
+                  I'm <span className="text-cyan-400 font-semibold">Kiran Garud</span>, a passionate DevOps Engineer who transforms complex infrastructure challenges into elegant, scalable solutions. My journey from commerce to cloud computing reflects a commitment to continuous learning and adaptation in an ever-evolving technological landscape.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                  Driven by resilience and curiosity, I've earned multiple certifications including the <span className="text-purple-400 font-semibold">AWS Solutions Architect – Associate</span>, and delivered <span className="text-cyan-400 font-semibold">20+ real-world cloud projects</span> across diverse domains. My expertise lies in architecting secure, scalable, and intelligent infrastructure using tools like Terraform, Jenkins, Docker, and Kubernetes, while integrating modern DevOps best practices.
+                  With <span className="text-purple-400 font-semibold">AWS Solutions Architect certification</span> and hands-on experience across <span className="text-cyan-400 font-semibold">20+ production environments</span>, I specialize in designing resilient cloud architectures that drive business growth. My expertise spans infrastructure automation, containerization, CI/CD pipeline optimization, and security implementation.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                  I operate at the crossroads of <span className="text-green-400 font-semibold">AI and automation</span>, where strategy meets execution. Whether it's implementing robust CI/CD pipelines, infrastructure as code, or containerized deployments, I bring precision, creativity, and performance-driven solutions to every engagement.
+                  What sets me apart is my integration of <span className="text-green-400 font-semibold">artificial intelligence into DevOps workflows</span>. I leverage cutting-edge AI tools to enhance automation, improve monitoring capabilities, and accelerate development cycles. This forward-thinking approach ensures that the solutions I deliver are not just current, but future-ready.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Beyond infrastructure, I build <span className="text-pink-400 font-semibold">AI-powered, microservices-ready websites</span> — end-to-end systems that are fully cloud-native, responsive, and deployment-ready. These applications are optimized for high availability, security, and seamless scaling in production environments.
+                  Beyond infrastructure, I architect <span className="text-pink-400 font-semibold">full-stack cloud-native applications</span> that seamlessly integrate with modern DevOps practices. My solutions emphasize security, scalability, and operational excellence, ensuring that every deployment meets enterprise-grade standards while maintaining cost efficiency.
                 </p>
               </div>
             </motion.div>
