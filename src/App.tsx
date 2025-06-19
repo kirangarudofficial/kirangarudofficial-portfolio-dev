@@ -6,6 +6,8 @@ import LoadingSpinner from './components/ui/LoadingSpinner';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import Hero from './components/Home/Hero';
+import Terminal from './components/Terminal/Terminal';
+import TerminalButton from './components/Terminal/TerminalButton';
 
 // Lazy load components for better performance
 const About = lazy(() => import('./components/About/About'));
@@ -31,6 +33,7 @@ function AppContent() {
   const [activeSection, setActiveSection] = useState('home');
   const [isLoading, setIsLoading] = useState(true);
   const [loadingProgress, setLoadingProgress] = useState(0);
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
 
   const handleNavigate = (sectionId: string) => {
     if (sectionId === 'home') {
@@ -154,6 +157,18 @@ function AppContent() {
         transition={{ duration: 0.5 }}
       >
         <Header activeSection={activeSection} onNavigate={handleNavigate} />
+        
+        {/* Terminal Button */}
+        <TerminalButton 
+          onClick={() => setIsTerminalOpen(!isTerminalOpen)}
+          isOpen={isTerminalOpen}
+        />
+        
+        {/* Terminal Component */}
+        <Terminal 
+          isOpen={isTerminalOpen}
+          onClose={() => setIsTerminalOpen(false)}
+        />
         
         <main role="main">
           <Hero onNavigate={handleNavigate} />
